@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState } from "react";
 import "./App.css";
 
@@ -17,6 +18,21 @@ function App() {
   const handleCommandSubmit = (event) => {
     // Prevent the page from reloading on submit
     event.preventDefault();
+
+    // Send a POST request to the backend server with the command as the request
+    axios
+      .post("http://localhost:3001/api/execute", { command: command })
+      .then((response) => {
+        // Update the output state with the command output received from the backend
+        setOutput([...output, response.data.output]);
+      })
+      .catch((error) => {
+        // If there is an error, update the output state with the error message
+        setOutput([...output, error.message]);
+      });
+
+    // Clear the command input field
+    setCommand("");
   };
 
   return (
