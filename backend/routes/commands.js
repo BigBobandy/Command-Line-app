@@ -1,4 +1,4 @@
-const express = requires("express");
+const express = require("express");
 const router = express.Router();
 // Using destructuring to directly import the 'exec' function from the 'child_process' module
 const { exec } = require("child_process");
