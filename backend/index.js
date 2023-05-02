@@ -23,4 +23,5 @@ app.listen(PORT, () => {
 
 const commandsRoute = require("./routes/commands");
 
+// Telling the express aplication to use commandsRoute for requests with the path prefix '/api'
 app.use("/api", commandsRoute);
