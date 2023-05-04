@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./App.css";
 import About from "./components/About";
 import CommandList from "./components/CommandList";
+import MatrixBackground from "./components/MatrixBackground";
 
 function App() {
   // Declaring state variables for input and output
@@ -39,25 +40,28 @@ function App() {
 
   return (
     <div className="App-container">
-      <About></About>
-      <div className="App">
-        <h1>Command Line Interface</h1>
-        <form onSubmit={handleCommandSubmit}>
-          <input
-            type="text"
-            placeholder="Enter command"
-            value={command}
-            onChange={handleCommandChange}
-          />
-          <button type="submit">Execute</button>
-        </form>
-        <div className="output">
-          {output.map((line, index) => (
-            <pre key={index}>{line}</pre>
-          ))}
+      <MatrixBackground />
+      <div className="App-content">
+        <About></About>
+        <div className="App">
+          <h1>Command Line Interface</h1>
+          <form onSubmit={handleCommandSubmit}>
+            <input
+              type="text"
+              placeholder="Enter command"
+              value={command}
+              onChange={handleCommandChange}
+            />
+            <button type="submit">Execute</button>
+          </form>
+          <div className="output">
+            {output.map((line, index) => (
+              <pre key={index}>{line}</pre>
+            ))}
+          </div>
         </div>
+        <CommandList></CommandList>
       </div>
-      <CommandList></CommandList>
     </div>
   );
 }

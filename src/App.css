@@ -10,11 +10,15 @@
   --background-color: #e0e0e0;
 }
 
+.App-content {
+  position: relative;
+  z-index: 1;
+}
+
 .App {
   border: 2px solid var(--primary-color);
   border-radius: 10px;
   padding: 1rem;
-  z-index: 1;
   background-color: var(--background-color);
 }
 
