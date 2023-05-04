@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 3001;
 // Start the server and listen for incoming requests on the specified port
 app.listen(PORT, () => {
   // Log a message to the console to indicate that the server has started successfully
-  console.log("Server is running on port ${PORT}");
+  console.log(`Server is running on port ${PORT}`);
 });
 
 // Telling the express aplication to use commandsRoute for requests with the path prefix '/api'
