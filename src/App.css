@@ -6,15 +6,16 @@
 }
 
 :root {
-  --primary-color: #0f0;
+  --primary-color: #213547;
+  --background-color: #e0e0e0;
 }
 
 .App {
-  border: 2px solid #213547;
+  border: 2px solid var(--primary-color);
   border-radius: 10px;
   padding: 1rem;
   z-index: 1;
-  background-color: #e0e0e0;
+  background-color: var(--background-color);
 }
 
 form input {

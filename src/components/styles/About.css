@@ -1,0 +1,8 @@
+.About {
+  margin: 15px;
+  font-size: 110%;
+  background-color: var(--background-color);
+  padding: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+}

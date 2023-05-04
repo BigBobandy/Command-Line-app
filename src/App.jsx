@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import "./App.css";
 import About from "./components/About";
+import CommandList from "./components/CommandList";
 
 function App() {
   // Declaring state variables for input and output
@@ -56,6 +57,7 @@ function App() {
           ))}
         </div>
       </div>
+      <CommandList></CommandList>
     </div>
   );
 }
