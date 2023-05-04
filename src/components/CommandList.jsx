@@ -18,6 +18,9 @@ function CommandList() {
           <h3>Windows</h3>
           <ul>
             <li>
+              <code>echo</code> - Display a line of text or a variable value
+            </li>
+            <li>
               <code>dir</code> - List directory contents
             </li>
             <li>
@@ -43,8 +46,7 @@ function CommandList() {
               listening ports
             </li>
             <li>
-              <code>gpupdate /force</code> - Force an update of Group Policy
-              settings
+              <code>find</code> - Search for a text string in a file.
             </li>
             <li>
               <code>chkdsk</code> - Check a disk for errors and repair them
@@ -68,6 +70,9 @@ function CommandList() {
         <div>
           <h3>Mac / Linux</h3>
           <ul>
+            <li>
+              <code>echo</code> - Display a line of text or a variable value
+            </li>
             <li>
               <code>ls</code> - List directory contents
             </li>
