@@ -6,7 +6,9 @@ function CommandList() {
 
   return (
     <div className="CommandList">
-      <h2>Commands List</h2>
+      <h2>
+        <code>Commands List</code>
+      </h2>
 
       <div>
         <button onClick={() => setActiveList("windows")}>Windows</button>

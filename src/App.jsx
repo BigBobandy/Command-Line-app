@@ -44,7 +44,9 @@ function App() {
       <div className="App-content">
         <About></About>
         <div className="App">
-          <h1>Command Line Interface</h1>
+          <h1>
+            <code>Command Line Interface</code>
+          </h1>
           <form onSubmit={handleCommandSubmit}>
             <input
               type="text"

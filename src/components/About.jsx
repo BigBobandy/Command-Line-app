@@ -4,7 +4,9 @@ import "./styles/About.css";
 function About() {
   return (
     <div className="About">
-      <h2>About this site</h2>
+      <h2>
+        <code>About this site</code>
+      </h2>
       <code>
         This website allows you to execute command-line commands through a
         simple web interface. It communicates with a RESTful API running on a
