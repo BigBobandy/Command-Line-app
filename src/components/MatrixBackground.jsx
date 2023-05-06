@@ -19,7 +19,7 @@ const MatrixBackground = () => {
     const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
     // Set the font size for the characters
-    const fontSize = 16;
+    const fontSize = 24;
 
     // Calculate the number of columns based on canvas width and font size
     const columns = canvasRef.current.width / fontSize;
